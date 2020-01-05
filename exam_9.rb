@@ -4,6 +4,7 @@
 
 def only_name(arr)
     # Write your code here
+    return arr.map { |hash| hash["name"] }
 end
 
 

@@ -10,10 +10,21 @@
 
 def is_prime?(num)
     # Write your code here
+    # (1..num).select { |element| num % element == 0 }.length == 2 ? true : false
+
+    return false if num < 2
+
+    (2...num).each do |factor|
+        if num % factor == 0
+            return false
+        end
+    end
+    return true
 end
 
 def pick_primes(numbers)
     # Write your code here
+    return numbers.select { |number| is_prime?(number) }
 end
 
 print pick_primes([2, 3, 4, 5, 6]) == [2, 3, 5]

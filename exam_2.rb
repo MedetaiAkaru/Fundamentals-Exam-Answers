@@ -4,6 +4,38 @@
 
 def reverse(word)
     # Write your code here
+    #
+    # solution 1
+    #
+    # array = word.split
+    # x = []
+    # array.length.times do x.push(array.pop) end
+    # return x.join
+
+    # solution 2
+    #
+    # array = word.split
+    # x = []
+    # array.each do |ele|
+    #     x.unshift(ele)
+    # end
+    # return x.join
+
+    # solution 3
+    #
+    # reversed = ""
+
+
+    # current_index = 0
+    # while current_index < word.length
+    #     current_letter = word[current_index]
+    #     reversed = current_letter + reversed
+    #     current_index += 1
+    # end
+
+    # return reversed
+
+
 end
 
 puts reverse("cat") == "tac"
